@@ -57,12 +57,45 @@ section h3 {
   color: #1a237e;
 }
 
+
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.register-email {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.register-btn {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.register-btn:hover {
+  background-color: #388e3c;
 }
 
 .activity-card h4 {
@@ -182,18 +215,23 @@ button:hover {
   border: 1px solid #ef9a9a;
 }
 
-.info {
-  background-color: #d1ecf1;
-  color: #0c5460;
-  border: 1px solid #bee5eb;
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-end;
 }
 
-.hidden {
-  display: none;
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 40px;
+  }
 }
 
 footer {
-  text-align: center;
   margin-top: 30px;
   padding: 20px;
   color: #666;
